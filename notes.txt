@@ -1,0 +1,79 @@
+Node Notes:
+
+Who is uses Node in production on the back-end?
+=> Walmart, Netflix, Uber
+
+What is Node?
+=> Javascript run-time that uses the V8 engine
+=> Uses event-driven, non-blocking language I/O
+
+What is the V8 engine?
+=> Open-source Javascript engine written in C++
+=> Takes javascript code and compiles it to machine code
+=> Works inside of Nodejs, and used in Chrome browser
+
+What is I/O?
+=> Input/Output
+=> Application does all the time
+=> Communcation from node application to the internet of things
+=> Database read/write
+=> Changing files on your file system
+=> Making HTTP request on separate web server, like Google API for fetching a map for the user's current location. 
+
+What is non-blocking I/O?
+=> While one user is doing all sorts of things, it doesn't prevent another user from doing things. 
+
+
+
+1. Node => Javascript
+	a. global => window
+	b. document => process
+
+2. Blocking Vs. Non-blocking
+	a. Each request takes three seconds
+	b. non-blocking => running at the same time
+
+```
+/*
+* blocking.js
+* Takes over six seconds to complete
+*
+*/
+var getUserSync = require('./getUserSync');
+
+var user1 = getUserSync('123');
+// waiting on user1 =>long request I/O
+console.log('user1', user1);
+// printing user1 => short, non-I/O
+
+var user2 = getUserSync('321');
+console.log('user2', user2);
+
+var sum = 1 + 2;
+console.log('The sum is ' + sum);
+
+```
+
+```
+/*
+* non-blocking.js
+* Takes just over 3 seconds to complete
+*
+*/
+var getUser = require('./getUser');
+
+getUser('123', function (user1) {
+console.log('user1', user1);
+});
+
+getUser('321', function (user2) {
+console.log('user2', user2);
+});
+
+var sum = 1 + 2;
+console.log('The sum is ' + sum);
+
+```
+
+
+

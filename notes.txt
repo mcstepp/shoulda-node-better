@@ -1,11 +1,12 @@
 Node Notes:
 
-Who is uses Node in production on the back-end?
+Who is uses NodeJs in production on the back-end?
 => Walmart, Netflix, Uber
 
-What is Node?
+What is NodeJs?
 => Javascript run-time that uses the V8 engine
 => Uses event-driven, non-blocking language I/O
+=> NodeJs's package ecosystem, npm, is the largest in the world for open source libraries
 
 What is the V8 engine?
 => Open-source Javascript engine written in C++
@@ -22,6 +23,9 @@ What is I/O?
 
 What is non-blocking I/O?
 => While one user is doing all sorts of things, it doesn't prevent another user from doing things. 
+
+What is blocking I/O?
+=> Eve
 
 
 

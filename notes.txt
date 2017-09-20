@@ -24,7 +24,7 @@ What is I/O?
 What is non-blocking I/O?
 => While one user is doing all sorts of things, it doesn't prevent another user from doing things. 
 
-What is blocking I/O?
+What is blocking I/O? // TODO: fill this in
 => Eve
 
 
@@ -79,5 +79,20 @@ console.log('The sum is ' + sum);
 
 ```
 
+### Creating a Note Application
+
+Goal of App => Create a file and append to it
+Get Packages => nodejs.org/api
+Package Details => File System, OS
+
+1. Starting the app
+    a. Every app begins with the `app.js` file, the only file you execute
+    b. Load packages using Require => assign to const
+        i. fs.appendFile => if file doesn't exist, it creates it.
+        ii. os.UserInfo => varies between OS, but `username` should always be available
+2. Got a Warning, Now What?
+    a. DeprecationWarning: Calling an asynchronous function without callback is deprecated.
+    b. Option 1 => adding callback as third argument to `appendFile`
+    c. Option 2 => call `appendFileSync` => asynchronous method.
 
 

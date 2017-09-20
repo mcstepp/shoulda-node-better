@@ -9,11 +9,17 @@ var user = os.userInfo();
 // fs.appendFile('greetings.txt', 'Hello world!');
 
 // option 1
-fs.appendFile('greetings.txt', 'Hello ' + user.username + '!', function (err){
+/*fs.appendFile('greetings.txt', 'Hello ' + user.username + '!', function (err){
+    if (err) {
+        console.log('Unable to write to file');
+    }
+});*/
+
+// option 2
+// fs.appendFileSync('greetings.txt', 'Hello World!');
+
+fs.appendFile('greetings.txt', `Hello ${user.username}!`, function (err){
     if (err) {
         console.log('Unable to write to file');
     }
 });
-
-// option 2
-// fs.appendFileSync('greetings.txt', 'Hello World!');

@@ -25,9 +25,7 @@ What is non-blocking I/O?
 => While one user is doing all sorts of things, it doesn't prevent another user from doing things. 
 
 What is blocking I/O? // TODO: fill this in
-=> Eve
-
-
+=> Events are queued up and execute after the previous one is finished.
 
 1. Node => Javascript
 	a. global => window
@@ -95,4 +93,24 @@ Package Details => File System, OS
     b. Option 1 => adding callback as third argument to `appendFile`
     c. Option 2 => call `appendFileSync` => asynchronous method.
 
+// DeprecationWarning: Calling an asynchronous function without callback is deprecated.
+`fs.appendFile('greetings.txt', 'Hello world!');`
 
+// option 1
+```
+fs.appendFile('greetings.txt', 'Hello ' + user.username + '!', function (err){
+    if (err) {
+        console.log('Unable to write to file');
+    }
+});
+```
+
+// option 2
+```
+fs.appendFileSync('greetings.txt', 'Hello World!');
+```
+
+### General
+Arrow functions
+=> Fine for anonymous functions
+=> they don't bind to `this` or the `arguments` array

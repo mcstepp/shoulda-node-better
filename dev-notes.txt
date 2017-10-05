@@ -119,4 +119,5 @@ fs.appendFileSync('greetings.txt', 'Hello World!');
 1. Arrow functions
 => Fine for anonymous functions
 => they don't bind to `this` or the `arguments` array
-2.
+2. Automatically Restart app on save
+=> Nodemon; install cmdline utility

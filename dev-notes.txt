@@ -29,7 +29,7 @@ What is blocking I/O? // TODO: fill this in
 
 1. Node => Javascript
 	a. global => window
-	b. document => process
+	b. process => document
 
 2. Blocking Vs. Non-blocking
 	a. Each request takes three seconds
@@ -92,6 +92,11 @@ Package Details => File System, OS
     a. DeprecationWarning: Calling an asynchronous function without callback is deprecated.
     b. Option 1 => adding callback as third argument to `appendFile`
     c. Option 2 => call `appendFileSync` => asynchronous method.
+3. Third-Party Modules
+    a. npm => package manager
+        i. `npm init` => package.json info
+        ii. `npm install <package name> --save` => saves it as dependency of project
+        iii. `npm install` => installs all the dependencies
 
 // DeprecationWarning: Calling an asynchronous function without callback is deprecated.
 `fs.appendFile('greetings.txt', 'Hello world!');`
@@ -111,6 +116,7 @@ fs.appendFileSync('greetings.txt', 'Hello World!');
 ```
 
 ### General
-Arrow functions
+1. Arrow functions
 => Fine for anonymous functions
 => they don't bind to `this` or the `arguments` array
+2.

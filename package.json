@@ -1,0 +1,22 @@
+{
+  "name": "shoulda-node-better",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcstepp/shoulda-node-better.git"
+  },
+  "author": "Meg Stepp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mcstepp/shoulda-node-better/issues"
+  },
+  "homepage": "https://github.com/mcstepp/shoulda-node-better#readme",
+  "dependencies": {
+    "lodash": "^4.17.4"
+  }
+}

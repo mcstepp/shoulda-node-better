@@ -121,3 +121,6 @@ fs.appendFileSync('greetings.txt', 'Hello World!');
 => they don't bind to `this` or the `arguments` array
 2. Automatically Restart app on save
 => Nodemon; install cmdline utility
+3. Starting node script with arguments
+=> `process.argv`;
+

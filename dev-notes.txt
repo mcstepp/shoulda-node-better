@@ -123,4 +123,10 @@ fs.appendFileSync('greetings.txt', 'Hello World!');
 => Nodemon; install cmdline utility
 3. Starting node script with arguments
 => `process.argv`;
+4. ES6 shortcut => if you're setting an object value that's a variable that is named the exactly the same as the property,
+    you can leave off the colon and value.
+
+### Helpful modules
+1. Nodemon => automatically restart app on save
+2. Yargs => library to build cmd line tools by parsing arguments in a variety of ways
 

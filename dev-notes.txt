@@ -115,6 +115,9 @@ fs.appendFile('greetings.txt', 'Hello ' + user.username + '!', function (err){
 fs.appendFileSync('greetings.txt', 'Hello World!');
 ```
 
+### Validation
+1.
+
 ### General
 1. Arrow functions
 => Fine for anonymous functions
